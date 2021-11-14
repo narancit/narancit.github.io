@@ -1,0 +1,129 @@
+/* RESPONSIVE AREA */
+@media only screen and (max-width:1090px){
+  /* HEADER */
+  header{padding:0 10px;}
+
+  /* ABOUT ME */
+  .about-me{padding:200px 10px 250px 50px;}
+
+  /* PROJECTS */
+  .my-work{padding:0 10px;}
+
+  /* COMMENTS */
+  .comments{padding:200px 10px 250px 50px;}
+
+  /* IMAGE  */
+
+  /* EXPERIENCE */
+  .expertise{padding:200px 10px 250px 50px;}
+  .work p{margin:0 10px 40px;width:99%;}
+
+  /* FOOTER AREA  */
+  /* PLACE  */
+  /* CONTACTS */
+  .contact-me{padding:200px 10px 250px 50px;}
+
+  /* COPYRIGHT */
+  .copyright{padding:0 10px 20px;}
+
+}
+
+@media only screen and (max-width:1000px){
+  /* HEADER */
+  /* ABOUT ME */
+  .about-me h2{left:-25px;}
+
+  /* PROJECTS */
+
+  /* COMMENTS */
+  .comments div h2{left:-25px;}
+
+  /* IMAGE  */
+  /* EXPERIENCE */
+  .expertise h2{left:-25px;}
+
+  /* FOOTER AREA  */
+  /* PLACE  */
+  /* CONTACTS */
+  .contact-me h2{left:-25px;}
+
+  /* COPYRIGHT */
+}
+
+@media only screen and (max-width:800px){
+  /* HEADER */
+  header{display:block;padding:120px 25px;text-align:center;}
+  header h1{font-size:70px;}
+  header h1 span{display:block;}
+  header figure{width:100%;margin:40px 0 0;}
+  header figure figcaption{text-align:center;}
+  header figure img{height:400px;}
+
+  /* ABOUT ME */
+  .wrapper{font-size:35px;}
+
+  /* PROJECTS */
+  /* COMMENTS */
+  /* IMAGE  */
+  /* EXPERIENCE */
+  .expertise h2{top:241px;}
+  .work h3{line-height:35px;}
+  .work h3 em{margin:-5px 0 0;}
+
+  /* FOOTER AREA  */
+  /* PLACE  */
+  /* CONTACTS */
+  .contact-me{padding:100px 10px;text-align:center;}
+  .contact-me h2{position:static;display:block;transform:none;margin:0 0 20px;}
+  .contact-me p{width:100%;}
+  .contact-me p span{margin:20px 0 0;}
+  .contact-me p a{margin:0 5px;}
+
+  /* COPYRIGHT */
+  .copyright{line-height:25px;}
+  .copyright span{display:block;}
+
+}
+
+@media only screen and (max-width:600px){
+  /* HEADER */
+  header{min-height:0;padding:100px 10px;}
+  header h1{font-size:50px;}
+  .scroll{display:none;}
+
+  /* ABOUT ME */
+  .about-me{padding:100px 10px;}
+  .about-me h2{position:static;display:block;transform:none;margin:0 0 20px;}
+
+  /* PROJECTS */
+  .my-work{padding:100px 10px;}
+  .my-work h2{margin:0 0 20px;}
+  .my-work figure{width:100%;margin:0 auto 50px;height:100%;}
+
+  /* COMMENTS */
+  .comments{padding:100px 10px;}
+  .comments div h2{position:static;display:block;transform:none;margin:0 0 20px;}
+
+  /* IMAGE  */
+  /* EXPERIENCE */
+  .expertise{padding:100px 10px;}
+  .expertise h2{position:static;display:block;transform:none;margin:0 0 20px;}
+
+  /* FOOTER AREA  */
+  /* PLACE  */
+  /* CONTACTS */
+  /* COPYRIGHT */
+}
+
+@media only screen and (max-width:500px){
+  /* HEADER */
+  /* ABOUT ME */
+  /* PROJECTS */
+  /* COMMENTS */
+  /* IMAGE  */
+  /* EXPERIENCE */
+  /* FOOTER AREA  */
+  /* PLACE  */
+  /* CONTACTS */
+  /* COPYRIGHT */
+}
