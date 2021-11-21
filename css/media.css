@@ -30,6 +30,13 @@
 
 @media only screen and (max-width:1000px){
   /* HEADER */
+  header{display:block;padding:120px 25px;text-align:center;}
+  header h1{font-size:70px;}
+  header h1 span{margin:0 auto;}
+  header figure{width:100%;margin:40px 0 0;}
+  header figure figcaption{text-align:center;}
+  header figure img{height:400px;}
+
   /* ABOUT ME */
   .about-me h2{left:-25px;}
 
@@ -52,12 +59,7 @@
 
 @media only screen and (max-width:800px){
   /* HEADER */
-  header{display:block;padding:120px 25px;text-align:center;}
-  header h1{font-size:70px;}
-  header h1 span{display:block;}
-  header figure{width:100%;margin:40px 0 0;}
-  header figure figcaption{text-align:center;}
-  header figure img{height:400px;}
+
 
   /* ABOUT ME */
   .wrapper{font-size:35px;}

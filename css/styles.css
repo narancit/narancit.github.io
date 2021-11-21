@@ -4,9 +4,12 @@
   --red: #C1292E;
   --blue: #235789;
   --white: #FDFFFC;
+  --typingSpeed: 4s;
+  --typingCharacter: 13;
+  --typingDelay:700ms;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Roboto:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600;700&family=Noto+Sans+Mono:wght@600;700;800;900&family=Roboto:wght@300;400&display=swap');
 
 *{padding:0;margin:0;box-sizing:border-box;resize:none;border:none;}
 body{color:var(--white);background:var(--black);}
@@ -26,11 +29,14 @@ progress::-webkit-progress-bar{background:gray;}
 .wrapper{width:100%;max-width:1080px;margin:0 auto;position:relative;font:600 45px/100% Archivo,sans-serif;}
 
 header{background:var(--black);display:flex;justify-content:space-between;min-height:100vh;align-items:center;position:relative;z-index:5;}
-  header h1{font-size:90px;line-height:100%;}
-  header h1 span{display:block;}
+  header h1{font-size:90px;line-height:100%;padding-right:20px;}
+  header h1 span{display:block;position:relative;width:max-content;font-family:Noto Sans Mono,monospace;}
+  header h1 span:before, header h1 span:after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;}
+  header h1 span:before{background:var(--black);animation:typing var(--typingSpeed) steps(var(--typingCharacter)) var(--typingDelay) forwards;}
+  header h1 span:after{width:10px;background:#fff;animation:typing var(--typingSpeed) steps(var(--typingCharacter)) var(--typingDelay) forwards, blinking var(--typingDelay) infinite;}
   header figure{width:400px;position:relative;}
   header figure figcaption{text-align:right;}
-  header figure img{max-width:100%;height:600px;position:relative;}
+  header figure img{max-width:100%;height:auto;position:relative;}
 
   .scroll{position:absolute;bottom:20px;left:50%;transform:translateX(-50%);text-align:center;}
   .scroll img{animation:shake 0.5s;animation-iteration-count:infinite;animation-delay:1s;}
@@ -68,7 +74,7 @@ header{background:var(--black);display:flex;justify-content:space-between;min-he
   .work li::marker{font-size:30px;content:"\00BB";position:absolute;}
 
   .lang{list-style:none;margin:20px 0 0;}
-  .lang li{display:inline-block;margin:0 10px 30px 0;}
+  .lang li{display:inline-block;margin:0 10px 30px 0;text-align:center;}
   .lang li:hover{color:gray;}
 
 footer{background:var(--black);position:relative;z-index:5;}
@@ -88,8 +94,8 @@ footer{background:var(--black);position:relative;z-index:5;}
   .copyright a{color:var(--white);}
   .copyright a:hover{color:var(--red);}
 
-
 /* ANIMATIONS */
+/* SHAKING IMAGE */
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   /* 10% { transform: translate(-1px, -2px) rotate(-1deg); } */
@@ -102,4 +108,12 @@ footer{background:var(--black);position:relative;z-index:5;}
   80% { transform: translate(-1px, -1px) rotate(1deg); }
   /* 90% { transform: translate(1px, 2px) rotate(0deg); } */
   100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+/* TYPING */
+@keyframes typing {
+  to { left:100%; }
+}
+/* BLINKING */
+@keyframes blinking{
+  to { background:transparent;}
 }
