@@ -66,6 +66,9 @@
   .wrapper{font-size:35px;}
 
   /* PROJECTS */
+  .my-work div{column-count:1;}
+  .my-work figure{width:90%;}
+
   /* COMMENTS */
   /* IMAGE  */
   /* EXPERIENCE */
@@ -101,7 +104,7 @@
   /* PROJECTS */
   .my-work{padding:100px 10px;}
   .my-work h2{margin:0 0 20px;}
-  .my-work figure{width:100%;margin:0 auto 50px;height:100%;}
+  .my-work figure{width:100%;margin:0 auto 30px;}
 
   /* COMMENTS */
   .comments{padding:100px 10px;}
@@ -125,6 +128,10 @@
   /* COMMENTS */
   /* IMAGE  */
   /* EXPERIENCE */
+  .lang-title{text-align:center;}
+  .lang{display:flex;justify-content:space-around;flex-wrap:wrap;}
+  .lang li{margin:0 auto 30px;width:32%;}
+
   /* FOOTER AREA  */
   /* PLACE  */
   /* CONTACTS */
