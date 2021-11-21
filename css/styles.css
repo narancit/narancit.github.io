@@ -30,7 +30,7 @@ progress::-webkit-progress-bar{background:gray;}
 
 header{background:var(--black);display:flex;justify-content:space-between;min-height:100vh;align-items:center;position:relative;z-index:5;}
   header h1{font-size:90px;line-height:100%;padding-right:20px;}
-  header h1 span{display:block;position:relative;width:max-content;font-family:Noto Sans Mono,monospace;}
+  header h1 span{display:block;position:relative;width:max-content;font-family:Noto Sans Mono,monospace;font-size:85px;}
   header h1 span:before, header h1 span:after{content:"";position:absolute;top:0;right:0;bottom:0;left:0;}
   header h1 span:before{background:var(--black);animation:typing var(--typingSpeed) steps(var(--typingCharacter)) var(--typingDelay) forwards;}
   header h1 span:after{width:10px;background:#fff;animation:typing var(--typingSpeed) steps(var(--typingCharacter)) var(--typingDelay) forwards, blinking var(--typingDelay) infinite;}
