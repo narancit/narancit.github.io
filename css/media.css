@@ -31,8 +31,8 @@
 @media only screen and (max-width:1000px){
   /* HEADER */
   header{display:block;padding:120px 25px;text-align:center;}
-  header h1{font-size:70px;}
-  header h1 span{margin:0 auto;}
+  header h1{font-size:70px;padding:0;}
+  header h1 span{margin:0 auto;font-size:65px;}
   header figure{width:100%;margin:40px 0 0;}
   header figure figcaption{text-align:center;}
   header figure img{height:400px;}
@@ -58,8 +58,9 @@
 }
 
 @media only screen and (max-width:800px){
+  header h1 span:before, header h1 span:after{animation:none;display:none;}
   /* HEADER */
-
+  header h1 span{font-size:inherit;font-family:inherit;display:inline-block;}
 
   /* ABOUT ME */
   .wrapper{font-size:35px;}
